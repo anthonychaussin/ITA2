@@ -1,0 +1,26 @@
+{
+  "name": "ita",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "anthonychaussin <chaussin.anthony@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@symfony/webpack-encore": "^0.28.3",
+    "autocomplete.js": "^0.37.1",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "7.0.1",
+    "webpack-notifier": "1.6.0"
+  },
+  "dependencies": {
+    "autocomplete": "^0.0.1",
+    "autoprefixer": "^9.8.0",
+    "ckeditor": "^4.0.0",
+    "font-awesome": "^4.7.0"
+  }
+}
