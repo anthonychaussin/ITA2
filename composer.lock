@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "251cef9698f79c19a50d0c622076cdfe",
+  "content-hash": "59792f2db5af6be4b62ae4e8b033b3bf",
   "packages": [
     {
       "name": "api-platform/api-pack",
@@ -249,16 +249,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/doctrine/annotations/zipball/b9d758e831c70751155c698c2f7df4665314a1cb",
-                "reference": "b9d758e831c70751155c698c2f7df4665314a1cb",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/lexer": "1.*",
-                "ext-tokenizer": "*",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "doctrine/cache": "1.*",
+        "reference": "b9d758e831c70751155c698c2f7df4665314a1cb",
+        "shasum": ""
+      },
+      "require": {
+        "doctrine/lexer": "1.*",
+        "ext-tokenizer": "*",
+        "php": "^7.1"
+      },
+      "require-dev": {
+        "doctrine/cache": "1.*",
                 "phpunit/phpunit": "^7.5"
             },
             "type": "library",
@@ -1378,14 +1378,14 @@
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com"
                 },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                },
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
-                }
+              {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+              },
+              {
+                "name": "Marco Pivetta",
+                "email": "ocramius@gmail.com"
+              }
             ],
           "description": "The Doctrine Reflection project is a simple library used by the various Doctrine projects which adds some additional functionality on top of the reflection functionality that comes with PHP. It allows you to get the reflection information about classes, methods and properties statically.",
           "homepage": "https://www.doctrine-project.org/projects/reflection.html",
@@ -1491,16 +1491,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ade6887fd9bd74177769645ab5c474824f8a418a",
-                "reference": "ade6887fd9bd74177769645ab5c474824f8a418a",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/lexer": "^1.0.1",
-                "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "^1.10"
-            },
-            "require-dev": {
-                "dominicsayers/isemail": "^3.0.7",
+        "reference": "ade6887fd9bd74177769645ab5c474824f8a418a",
+        "shasum": ""
+      },
+      "require": {
+        "doctrine/lexer": "^1.0.1",
+        "php": ">=5.5",
+        "symfony/polyfill-intl-idn": "^1.10"
+      },
+      "require-dev": {
+        "dominicsayers/isemail": "^3.0.7",
                 "phpunit/phpunit": "^4.8.36|^7.5.15",
                 "satooshi/php-coveralls": "^1.0.1"
             },
@@ -1519,16 +1519,16 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eduardo Gulias Davis"
-                }
-            ],
-            "description": "A library for validating emails against several RFCs",
-            "homepage": "https://github.com/egulias/EmailValidator",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Eduardo Gulias Davis"
+        }
+      ],
+      "description": "A library for validating emails against several RFCs",
+      "homepage": "https://github.com/egulias/EmailValidator",
       "keywords": [
         "email",
         "emailvalidation",
@@ -1886,16 +1886,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
-                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
+        "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.2.4"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+      },
+      "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.3.x-dev"
@@ -2077,16 +2077,16 @@
             },
             "autoload": {
                 "files": [
-                    "src/autoload.php"
+                  "src/autoload.php"
                 ],
-                "psr-4": {
-                    "Laminas\\ZendFrameworkBridge\\": "src//"
-                }
+              "psr-4": {
+                "Laminas\\ZendFrameworkBridge\\": "src//"
+              }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "BSD-3-Clause"
+          ],
           "description": "Alias legacy ZF class names to Laminas Project equivalents.",
           "keywords": [
             "ZendFramework",
@@ -2208,16 +2208,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c861fcba2ca29404dc9e617eedd9eff4616986b8",
-                "reference": "c861fcba2ca29404dc9e617eedd9eff4616986b8",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2",
-                "psr/log": "^1.0.1"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0.0"
-            },
+        "reference": "c861fcba2ca29404dc9e617eedd9eff4616986b8",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.2",
+        "psr/log": "^1.0.1"
+      },
+      "provide": {
+        "psr/log-implementation": "1.0.0"
+      },
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
@@ -2259,16 +2259,16 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                }
-            ],
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Jordi Boggiano",
+          "email": "j.boggiano@seld.be",
+          "homepage": "http://seld.be"
+        }
+      ],
       "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
       "homepage": "http://github.com/Seldaek/monolog",
       "keywords": [
@@ -2346,16 +2346,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/421679846270a5772534828013a93be709fb13df",
-                "reference": "421679846270a5772534828013a93be709fb13df",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1.0 || ^2.0",
-                "php": "^7.4.0"
-            },
-            "require-dev": {
-                "composer/composer": "^1.9.3 || ^2.0@dev",
-                "doctrine/coding-standard": "^7.0.2",
+        "reference": "421679846270a5772534828013a93be709fb13df",
+        "shasum": ""
+      },
+      "require": {
+        "composer-plugin-api": "^1.1.0 || ^2.0",
+        "php": "^7.4.0"
+      },
+      "require-dev": {
+        "composer/composer": "^1.9.3 || ^2.0@dev",
+        "doctrine/coding-standard": "^7.0.2",
                 "ext-zip": "^1.15.0",
                 "infection/infection": "^0.15.3",
                 "phpunit/phpunit": "^9.0.1",
@@ -2443,15 +2443,15 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.io/"
-                }
-            ],
-            "description": "A library providing utilities to generate, instantiate and generally operate with Object Proxies",
-            "homepage": "https://github.com/Ocramius/ProxyManager",
+          "authors": [
+            {
+              "name": "Marco Pivetta",
+              "email": "ocramius@gmail.com",
+              "homepage": "http://ocramius.github.io/"
+            }
+          ],
+          "description": "A library providing utilities to generate, instantiate and generally operate with Object Proxies",
+          "homepage": "https://github.com/Ocramius/ProxyManager",
           "keywords": [
             "aop",
             "lazy loading",
@@ -2541,16 +2541,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
-                "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
+        "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=7.1"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -2971,16 +2971,16 @@
                     "/tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "Fabien Potencier",
+              "email": "fabien@symfony.com"
+            }
+          ],
           "description": "This bundle provides a way to configure your controllers with annotations",
           "keywords": [
             "annotations",
@@ -3065,16 +3065,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/symfony/asset/zipball/be35f49cf2cf1c54de30bc31d2c5ff3c1d880be8",
-                "reference": "be35f49cf2cf1c54de30bc31d2c5ff3c1d880be8",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5"
-            },
-            "require-dev": {
-                "symfony/http-foundation": "^4.4|^5.0",
-                "symfony/http-kernel": "^4.4|^5.0"
-            },
+        "reference": "be35f49cf2cf1c54de30bc31d2c5ff3c1d880be8",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.2.5"
+      },
+      "require-dev": {
+        "symfony/http-foundation": "^4.4|^5.0",
+        "symfony/http-kernel": "^4.4|^5.0"
+      },
             "suggest": {
                 "symfony/http-foundation": ""
             },
@@ -6251,14 +6251,14 @@
             ],
             "description": "Symfony String component",
             "homepage": "https://symfony.com",
-            "keywords": [
-              "grapheme",
-              "i18n",
-              "string",
-              "unicode",
-              "utf-8",
-              "utf8"
-            ],
+          "keywords": [
+            "grapheme",
+            "i18n",
+            "string",
+            "unicode",
+            "utf-8",
+            "utf8"
+          ],
           "time": "2020-03-16T13:02:39+00:00"
         },
     {
@@ -6328,16 +6328,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/symfony/translation/zipball/c3879db7a68fe3e12b41263b05879412c87b27fd",
-                "reference": "c3879db7a68fe3e12b41263b05879412c87b27fd",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/translation-contracts": "^2"
-            },
-            "conflict": {
-                "symfony/config": "<4.4",
+        "reference": "c3879db7a68fe3e12b41263b05879412c87b27fd",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.2.5",
+        "symfony/polyfill-mbstring": "~1.0",
+        "symfony/translation-contracts": "^2"
+      },
+      "conflict": {
+        "symfony/config": "<4.4",
                 "symfony/dependency-injection": "<5.0",
                 "symfony/http-kernel": "<5.0",
                 "symfony/twig-bundle": "<5.0",
@@ -6945,10 +6945,10 @@
             "description": "Symfony WebLink Component",
             "homepage": "https://symfony.com",
             "keywords": [
-                "dns-prefetch",
-                "http",
-                "http2",
-                "link",
+              "dns-prefetch",
+              "http",
+              "http2",
+              "link",
               "performance",
               "prefetch",
               "preload",
@@ -7022,16 +7022,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/symfony/yaml/zipball/482fb4e710e5af3e0e78015f19aa716ad953392f",
-                "reference": "482fb4e710e5af3e0e78015f19aa716ad953392f",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<4.4"
-            },
+        "reference": "482fb4e710e5af3e0e78015f19aa716ad953392f",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.2.5",
+        "symfony/polyfill-ctype": "~1.8"
+      },
+      "conflict": {
+        "symfony/console": "<4.4"
+      },
             "require-dev": {
                 "symfony/console": "^4.4|^5.0"
             },
@@ -7269,16 +7269,16 @@
                     "Webmozart\\Assert\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernhard Schussek",
-                  "email": "bschussek@gmail.com"
-                }
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "Bernhard Schussek",
+              "email": "bschussek@gmail.com"
+            }
+          ],
           "description": "Assertions to validate method input/output with nice error messages.",
           "keywords": [
             "assert",
@@ -7432,160 +7432,160 @@
       "time": "2017-05-14T17:21:12+00:00"
     }
   ],
-    "packages-dev": [
-      {
-        "name": "doctrine/data-fixtures",
-        "version": "1.4.2",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/doctrine/data-fixtures.git",
-          "reference": "39e9777c9089351a468f780b01cffa3cb0a42907"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/39e9777c9089351a468f780b01cffa3cb0a42907",
-          "reference": "39e9777c9089351a468f780b01cffa3cb0a42907",
-          "shasum": ""
-        },
-        "require": {
-          "doctrine/common": "^2.11",
-          "doctrine/persistence": "^1.3.3",
-          "php": "^7.2"
-        },
-        "conflict": {
-          "doctrine/phpcr-odm": "<1.3.0"
-        },
-        "require-dev": {
-          "alcaeus/mongo-php-adapter": "^1.1",
-          "doctrine/coding-standard": "^6.0",
-          "doctrine/dbal": "^2.5.4",
-          "doctrine/mongodb-odm": "^1.3.0",
-          "doctrine/orm": "^2.7.0",
-          "phpunit/phpunit": "^7.0"
-        },
-        "suggest": {
-          "alcaeus/mongo-php-adapter": "For using MongoDB ODM with PHP 7",
-          "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
-          "doctrine/orm": "For loading ORM fixtures",
-          "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
-        },
-        "type": "library",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "1.4.x-dev"
-          }
-        },
-        "autoload": {
-          "psr-4": {
-            "Doctrine\\Common\\DataFixtures\\": "lib/Doctrine/Common/DataFixtures"
-          }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "MIT"
-        ],
-        "authors": [
-          {
-            "name": "Jonathan Wage",
-            "email": "jonwage@gmail.com"
-          }
-        ],
-        "description": "Data Fixtures for all Doctrine Object Managers",
-        "homepage": "http://www.doctrine-project.org",
-        "keywords": [
-          "database"
-        ],
-        "time": "2020-01-17T11:11:28+00:00"
+  "packages-dev": [
+    {
+      "name": "doctrine/data-fixtures",
+      "version": "1.4.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/doctrine/data-fixtures.git",
+        "reference": "39e9777c9089351a468f780b01cffa3cb0a42907"
       },
-      {
-        "name": "doctrine/doctrine-fixtures-bundle",
-        "version": "3.3.1",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-          "reference": "39defca57ee0949e1475c46177b30b6d1b732e8f"
-        },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/39defca57ee0949e1475c46177b30b6d1b732e8f",
-          "reference": "39defca57ee0949e1475c46177b30b6d1b732e8f",
-          "shasum": ""
-        },
-        "require": {
-          "doctrine/data-fixtures": "^1.3",
-          "doctrine/doctrine-bundle": "^1.11|^2.0",
-          "doctrine/orm": "^2.6.0",
-          "doctrine/persistence": "^1.3",
-          "php": "^7.1",
-          "symfony/config": "^3.4|^4.3|^5.0",
-          "symfony/console": "^3.4|^4.3|^5.0",
-          "symfony/dependency-injection": "^3.4|^4.3|^5.0",
-          "symfony/doctrine-bridge": "^3.4|^4.1|^5.0",
-          "symfony/http-kernel": "^3.4|^4.3|^5.0"
-        },
-        "require-dev": {
-          "doctrine/coding-standard": "^6.0",
-          "phpunit/phpunit": "^7.4",
-          "symfony/phpunit-bridge": "^4.1|^5.0"
-        },
-        "type": "symfony-bundle",
-        "extra": {
-          "branch-alias": {
-            "dev-master": "3.3.x-dev"
-          }
-        },
-        "autoload": {
-          "psr-4": {
-            "Doctrine\\Bundle\\FixturesBundle\\": ""
-          }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-          "MIT"
-        ],
-        "authors": [
-          {
-            "name": "Fabien Potencier",
-            "email": "fabien@symfony.com"
-          },
-          {
-            "name": "Doctrine Project",
-            "homepage": "http://www.doctrine-project.org"
-          },
-          {
-            "name": "Symfony Community",
-            "homepage": "http://symfony.com/contributors"
-          }
-        ],
-        "description": "Symfony DoctrineFixturesBundle",
-        "homepage": "http://www.doctrine-project.org",
-        "keywords": [
-          "Fixture",
-          "persistence"
-        ],
-        "time": "2020-04-02T16:40:37+00:00"
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/39e9777c9089351a468f780b01cffa3cb0a42907",
+        "reference": "39e9777c9089351a468f780b01cffa3cb0a42907",
+        "shasum": ""
       },
-      {
-        "name": "nikic/php-parser",
-        "version": "v4.4.0",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/nikic/PHP-Parser.git",
-          "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
+      "require": {
+        "doctrine/common": "^2.11",
+        "doctrine/persistence": "^1.3.3",
+        "php": "^7.2"
+      },
+      "conflict": {
+        "doctrine/phpcr-odm": "<1.3.0"
+      },
+      "require-dev": {
+        "alcaeus/mongo-php-adapter": "^1.1",
+        "doctrine/coding-standard": "^6.0",
+        "doctrine/dbal": "^2.5.4",
+        "doctrine/mongodb-odm": "^1.3.0",
+        "doctrine/orm": "^2.7.0",
+        "phpunit/phpunit": "^7.0"
+      },
+      "suggest": {
+        "alcaeus/mongo-php-adapter": "For using MongoDB ODM with PHP 7",
+        "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
+        "doctrine/orm": "For loading ORM fixtures",
+        "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.4.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Doctrine\\Common\\DataFixtures\\": "lib/Doctrine/Common/DataFixtures"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Jonathan Wage",
+          "email": "jonwage@gmail.com"
+        }
+      ],
+      "description": "Data Fixtures for all Doctrine Object Managers",
+      "homepage": "http://www.doctrine-project.org",
+      "keywords": [
+        "database"
+      ],
+      "time": "2020-01-17T11:11:28+00:00"
+    },
+    {
+      "name": "doctrine/doctrine-fixtures-bundle",
+      "version": "3.3.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
+        "reference": "39defca57ee0949e1475c46177b30b6d1b732e8f"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/39defca57ee0949e1475c46177b30b6d1b732e8f",
+        "reference": "39defca57ee0949e1475c46177b30b6d1b732e8f",
+        "shasum": ""
+      },
+      "require": {
+        "doctrine/data-fixtures": "^1.3",
+        "doctrine/doctrine-bundle": "^1.11|^2.0",
+        "doctrine/orm": "^2.6.0",
+        "doctrine/persistence": "^1.3",
+        "php": "^7.1",
+        "symfony/config": "^3.4|^4.3|^5.0",
+        "symfony/console": "^3.4|^4.3|^5.0",
+        "symfony/dependency-injection": "^3.4|^4.3|^5.0",
+        "symfony/doctrine-bridge": "^3.4|^4.1|^5.0",
+        "symfony/http-kernel": "^3.4|^4.3|^5.0"
+      },
+      "require-dev": {
+        "doctrine/coding-standard": "^6.0",
+        "phpunit/phpunit": "^7.4",
+        "symfony/phpunit-bridge": "^4.1|^5.0"
+      },
+      "type": "symfony-bundle",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.3.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Doctrine\\Bundle\\FixturesBundle\\": ""
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
         },
-        "dist": {
-          "type": "zip",
-          "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
-                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "ircmaxell/php-yacc": "0.0.5",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+        {
+          "name": "Doctrine Project",
+          "homepage": "http://www.doctrine-project.org"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "http://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony DoctrineFixturesBundle",
+      "homepage": "http://www.doctrine-project.org",
+      "keywords": [
+        "Fixture",
+        "persistence"
+      ],
+      "time": "2020-04-02T16:40:37+00:00"
+    },
+    {
+      "name": "nikic/php-parser",
+      "version": "v4.4.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/nikic/PHP-Parser.git",
+        "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+        "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+        "shasum": ""
+      },
+      "require": {
+        "ext-tokenizer": "*",
+        "php": ">=7.0"
+      },
+      "require-dev": {
+        "ircmaxell/php-yacc": "0.0.5",
+        "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -8147,9 +8147,9 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2.5",
-        "ext-ctype": "*",
-        "ext-iconv": "*"
+      "php": "^7.4.6",
+      "ext-ctype": "*",
+      "ext-iconv": "*"
     },
     "platform-dev": []
 }
