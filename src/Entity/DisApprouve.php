@@ -59,4 +59,9 @@ class DisApprouve
 
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this->getUser() . "";
+    }
 }
