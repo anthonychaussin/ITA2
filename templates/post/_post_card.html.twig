@@ -1,0 +1,20 @@
+<div class="col-lg-4 col-md-6 mb-4 ml-auto mr-auto" style="min-width: 400px;">
+    <div class="card h-100 p-1">
+        <a class="h-50 d-flex" href="{{ path('post_show', {'id': post.id}) }}">
+            {% if post.type.label == "IMAGE" %}
+            <img class="card-img m-auto mh-100" src="{{ post.ressource }}" alt="miniature of {{ post.title }}"></a>
+        {% else %}
+            <iframe src="{{ post.ressource }}"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        {% endif %}
+        <div class="card-body h-50">
+            <h4 class="card-title">
+                <a href="{{ path('post_show', {'id': post.id}) }}">{{ post.title }}</a>
+            </h4>
+            <div class="d-inline-block w-100">
+            </div>
+        </div>
+        <div class="card-footer">
+        </div>
+    </div>
+</div>

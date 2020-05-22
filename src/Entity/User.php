@@ -37,9 +37,14 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity=Post::class, mappedBy="user", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=Post::class, mappedBy="User", orphanRemoval=true)
      */
-    private $Post;
+    private $posts;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Commentary::class, mappedBy="User", orphanRemoval=true)
+     */
+    private $commentaries;
 
     /**
      * @ORM\OneToMany(targetEntity=Approuve::class, mappedBy="User", orphanRemoval=true)
@@ -52,23 +57,23 @@ class User implements UserInterface
     private $disApprouves;
 
     /**
-     * @ORM\OneToMany(targetEntity=Like::class, mappedBy="User", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=LikeP::class, mappedBy="User", orphanRemoval=true)
      */
-    private $likes;
+    private $likePs;
 
     /**
-     * @ORM\OneToMany(targetEntity=DisLike::class, mappedBy="User", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=DisLikeP::class, mappedBy="User", orphanRemoval=true)
      */
-    private $disLikes;
-
+    private $disLikePs;
 
     public function __construct()
     {
-        $this->Post = new ArrayCollection();
+        $this->posts = new ArrayCollection();
+        $this->commentaries = new ArrayCollection();
         $this->approuves = new ArrayCollection();
         $this->disApprouves = new ArrayCollection();
-        $this->likes = new ArrayCollection();
-        $this->disLikes = new ArrayCollection();
+        $this->likePs = new ArrayCollection();
+        $this->disLikePs = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -152,15 +157,15 @@ class User implements UserInterface
     /**
      * @return Collection|Post[]
      */
-    public function getPost(): Collection
+    public function getPosts(): Collection
     {
-        return $this->Post;
+        return $this->posts;
     }
 
     public function addPost(Post $post): self
     {
-        if (!$this->Post->contains($post)) {
-            $this->Post[] = $post;
+        if (!$this->posts->contains($post)) {
+            $this->posts[] = $post;
             $post->setUser($this);
         }
 
@@ -169,11 +174,42 @@ class User implements UserInterface
 
     public function removePost(Post $post): self
     {
-        if ($this->Post->contains($post)) {
-            $this->Post->removeElement($post);
+        if ($this->posts->contains($post)) {
+            $this->posts->removeElement($post);
             // set the owning side to null (unless already changed)
             if ($post->getUser() === $this) {
                 $post->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Commentary[]
+     */
+    public function getCommentaries(): Collection
+    {
+        return $this->commentaries;
+    }
+
+    public function addCommentary(Commentary $commentary): self
+    {
+        if (!$this->commentaries->contains($commentary)) {
+            $this->commentaries[] = $commentary;
+            $commentary->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCommentary(Commentary $commentary): self
+    {
+        if ($this->commentaries->contains($commentary)) {
+            $this->commentaries->removeElement($commentary);
+            // set the owning side to null (unless already changed)
+            if ($commentary->getUser() === $this) {
+                $commentary->setUser(null);
             }
         }
 
@@ -243,30 +279,30 @@ class User implements UserInterface
     }
 
     /**
-     * @return Collection|Like[]
+     * @return Collection|LikeP[]
      */
-    public function getLikes(): Collection
+    public function getLikePs(): Collection
     {
-        return $this->likes;
+        return $this->likePs;
     }
 
-    public function addLike(Like $like): self
+    public function addLikeP(LikeP $likeP): self
     {
-        if (!$this->likes->contains($like)) {
-            $this->likes[] = $like;
-            $like->setUser($this);
+        if (!$this->likePs->contains($likeP)) {
+            $this->likePs[] = $likeP;
+            $likeP->setUser($this);
         }
 
         return $this;
     }
 
-    public function removeLike(Like $like): self
+    public function removeLikeP(LikeP $likeP): self
     {
-        if ($this->likes->contains($like)) {
-            $this->likes->removeElement($like);
+        if ($this->likePs->contains($likeP)) {
+            $this->likePs->removeElement($likeP);
             // set the owning side to null (unless already changed)
-            if ($like->getUser() === $this) {
-                $like->setUser(null);
+            if ($likeP->getUser() === $this) {
+                $likeP->setUser(null);
             }
         }
 
@@ -274,36 +310,35 @@ class User implements UserInterface
     }
 
     /**
-     * @return Collection|DisLike[]
+     * @return Collection|DisLikeP[]
      */
-    public function getDisLikes(): Collection
+    public function getDisLikePs(): Collection
     {
-        return $this->disLikes;
+        return $this->disLikePs;
     }
 
-    public function addDisLike(DisLike $disLike): self
+    public function addDisLikeP(DisLikeP $disLikeP): self
     {
-        if (!$this->disLikes->contains($disLike)) {
-            $this->disLikes[] = $disLike;
-            $disLike->setUser($this);
+        if (!$this->disLikePs->contains($disLikeP)) {
+            $this->disLikePs[] = $disLikeP;
+            $disLikeP->setUser($this);
         }
 
         return $this;
     }
 
-    public function removeDisLike(DisLike $disLike): self
+    public function removeDisLikeP(DisLikeP $disLikeP): self
     {
-        if ($this->disLikes->contains($disLike)) {
-            $this->disLikes->removeElement($disLike);
+        if ($this->disLikePs->contains($disLikeP)) {
+            $this->disLikePs->removeElement($disLikeP);
             // set the owning side to null (unless already changed)
-            if ($disLike->getUser() === $this) {
-                $disLike->setUser(null);
+            if ($disLikeP->getUser() === $this) {
+                $disLikeP->setUser(null);
             }
         }
 
         return $this;
     }
-
     public function __toString()
     {
         return $this->getEmail();

@@ -2,14 +2,13 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\PostRepository;
+use DateTimeInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ApiResource()
  * @ORM\Entity(repositoryClass=PostRepository::class)
  */
 class Post
@@ -24,10 +23,10 @@ class Post
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $title;
+    private $Title;
 
     /**
-     * @ORM\Column(type="string", length=500)
+     * @ORM\Column(type="string", length=1500)
      */
     private $Ressource;
 
@@ -38,20 +37,20 @@ class Post
     private $Type;
 
     /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="posts")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $User;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $Date;
+
+    /**
      * @ORM\OneToMany(targetEntity=Commentary::class, mappedBy="Post", orphanRemoval=true)
      */
     private $commentaries;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="Post")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $user;
-
-    /**
-     * @ORM\ManyToMany(targetEntity=User::class, mappedBy="Approuve")
-     */
-    private $users;
 
     /**
      * @ORM\OneToMany(targetEntity=Approuve::class, mappedBy="Post", orphanRemoval=true)
@@ -63,12 +62,23 @@ class Post
      */
     private $disApprouves;
 
+    /**
+     * @ORM\OneToMany(targetEntity=LikeP::class, mappedBy="Post", orphanRemoval=true)
+     */
+    private $likePs;
+
+    /**
+     * @ORM\OneToMany(targetEntity=DisLikeP::class, mappedBy="Post", orphanRemoval=true)
+     */
+    private $disLikePs;
+
     public function __construct()
     {
         $this->commentaries = new ArrayCollection();
-        $this->users = new ArrayCollection();
         $this->approuves = new ArrayCollection();
         $this->disApprouves = new ArrayCollection();
+        $this->likePs = new ArrayCollection();
+        $this->disLikePs = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -78,12 +88,12 @@ class Post
 
     public function getTitle(): ?string
     {
-        return $this->title;
+        return $this->Title;
     }
 
-    public function setTitle(string $title): self
+    public function setTitle(string $Title): self
     {
-        $this->title = $title;
+        $this->Title = $Title;
 
         return $this;
     }
@@ -108,6 +118,30 @@ class Post
     public function setType(?Type $Type): self
     {
         $this->Type = $Type;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->User;
+    }
+
+    public function setUser(?User $User): self
+    {
+        $this->User = $User;
+
+        return $this;
+    }
+
+    public function getDate(): ?DateTimeInterface
+    {
+        return $this->Date;
+    }
+
+    public function setDate(DateTimeInterface $Date): self
+    {
+        $this->Date = $Date;
 
         return $this;
     }
@@ -138,46 +172,6 @@ class Post
             if ($commentary->getPost() === $this) {
                 $commentary->setPost(null);
             }
-        }
-
-        return $this;
-    }
-
-    public function getUser(): ?User
-    {
-        return $this->user;
-    }
-
-    public function setUser(?User $user): self
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|User[]
-     */
-    public function getUsers(): Collection
-    {
-        return $this->users;
-    }
-
-    public function addUser(User $user): self
-    {
-        if (!$this->users->contains($user)) {
-            $this->users[] = $user;
-            $user->addApprouve($this);
-        }
-
-        return $this;
-    }
-
-    public function removeUser(User $user): self
-    {
-        if ($this->users->contains($user)) {
-            $this->users->removeElement($user);
-            $user->removeApprouve($this);
         }
 
         return $this;
@@ -239,6 +233,68 @@ class Post
             // set the owning side to null (unless already changed)
             if ($disApproufe->getPost() === $this) {
                 $disApproufe->setPost(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|LikeP[]
+     */
+    public function getLikePs(): Collection
+    {
+        return $this->likePs;
+    }
+
+    public function addLikeP(LikeP $likeP): self
+    {
+        if (!$this->likePs->contains($likeP)) {
+            $this->likePs[] = $likeP;
+            $likeP->setPost($this);
+        }
+
+        return $this;
+    }
+
+    public function removeLikeP(LikeP $likeP): self
+    {
+        if ($this->likePs->contains($likeP)) {
+            $this->likePs->removeElement($likeP);
+            // set the owning side to null (unless already changed)
+            if ($likeP->getPost() === $this) {
+                $likeP->setPost(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|DisLikeP[]
+     */
+    public function getDisLikePs(): Collection
+    {
+        return $this->disLikePs;
+    }
+
+    public function addDisLikeP(DisLikeP $disLikeP): self
+    {
+        if (!$this->disLikePs->contains($disLikeP)) {
+            $this->disLikePs[] = $disLikeP;
+            $disLikeP->setPost($this);
+        }
+
+        return $this;
+    }
+
+    public function removeDisLikeP(DisLikeP $disLikeP): self
+    {
+        if ($this->disLikePs->contains($disLikeP)) {
+            $this->disLikePs->removeElement($disLikeP);
+            // set the owning side to null (unless already changed)
+            if ($disLikeP->getPost() === $this) {
+                $disLikeP->setPost(null);
             }
         }
 

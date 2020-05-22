@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Approuve{% endblock %}
+
+{% block body %}
+    <h1>Approuve</h1>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ approuve.id }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('approuve_index') }}">back to list</a>
+
+    <a href="{{ path('approuve_edit', {'id': approuve.id}) }}">edit</a>
+
+    {{ include('approuve/_delete_form.html.twig') }}
+{% endblock %}

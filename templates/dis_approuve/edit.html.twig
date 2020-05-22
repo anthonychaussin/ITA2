@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit DisApprouve{% endblock %}
+
+{% block body %}
+    <h1>Edit DisApprouve</h1>
+
+    {{ include('dis_approuve/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('dis_approuve_index') }}">back to list</a>
+
+    {{ include('dis_approuve/_delete_form.html.twig') }}
+{% endblock %}

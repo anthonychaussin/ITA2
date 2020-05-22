@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New DisApprouve{% endblock %}
+
+{% block body %}
+    <h1>Create new DisApprouve</h1>
+
+    {{ include('dis_approuve/_form.html.twig') }}
+
+    <a href="{{ path('dis_approuve_index') }}">back to list</a>
+{% endblock %}

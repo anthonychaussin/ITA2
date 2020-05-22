@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Like;
+use App\Entity\LikeP;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Like|null find($id, $lockMode = null, $lockVersion = null)
- * @method Like|null findOneBy(array $criteria, array $orderBy = null)
- * @method Like[]    findAll()
- * @method Like[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method LikeP|null find($id, $lockMode = null, $lockVersion = null)
+ * @method LikeP|null findOneBy(array $criteria, array $orderBy = null)
+ * @method LikeP[]    findAll()
+ * @method LikeP[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class LikeRepository extends ServiceEntityRepository
+class LikePRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Like::class);
+        parent::__construct($registry, LikeP::class);
     }
 
     // /**
-    //  * @return Like[] Returns an array of Like objects
+    //  * @return LikeP[] Returns an array of LikeP objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class LikeRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Like
+    public function findOneBySomeField($value): ?LikeP
     {
         return $this->createQueryBuilder('l')
             ->andWhere('l.exampleField = :val')

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DisLikeP index{% endblock %}
+
+{% block body %}
+    <h1>DisLikeP index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for dis_like_p in dis_like_ps %}
+            <tr>
+                <td>{{ dis_like_p.id }}</td>
+                <td>
+                    <a href="{{ path('dis_like_p_show', {'id': dis_like_p.id}) }}">show</a>
+                    <a href="{{ path('dis_like_p_edit', {'id': dis_like_p.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('dis_like_p_new') }}">Create new</a>
+{% endblock %}

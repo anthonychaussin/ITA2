@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% block stylesheets %}
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+{% endblock %}
+<header id="header" class="top-blog-header">
+
+
+    <div class="blog-title-wrapper content">
+        <figure class="avatar-wrapper animate">
+            <div class="d-flex m-5 p-3 bg-light">
+                <h1 class="m-auto text-uppercase">impose ton anonymat</h1>
+            </div>
+        </figure>
+    </div>
+</header>
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="w-100" id="navbarNav">
+        <ul class="navbar-nav d-inline-flex w-100">
+            <li class="nav-item active ml-auto">
+                <a class="nav-link text-uppercase font-weight-bold" href="#">Billets<span
+                            class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase font-weight-bold" href="#">Coups de cœur</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase font-weight-bold" href="#">Contribuer</a>
+            </li>
+            <li class="nav-item mr-auto">
+                <a class="nav-link text-uppercase font-weight-bold" href="#">Archives</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% block body %}{% endblock %}
+</body>
 </html>

@@ -2,14 +2,12 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\TypeRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ApiResource()
  * @ORM\Entity(repositoryClass=TypeRepository::class)
  */
 class Type
@@ -19,17 +17,17 @@ class Type
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private ?int $id;
+    private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private ?string $label;
+    private $Label;
 
     /**
      * @ORM\OneToMany(targetEntity=Post::class, mappedBy="Type", orphanRemoval=true)
      */
-    private ArrayCollection $posts;
+    private $posts;
 
     public function __construct()
     {
@@ -43,12 +41,12 @@ class Type
 
     public function getLabel(): ?string
     {
-        return $this->label;
+        return $this->Label;
     }
 
-    public function setLabel(string $label): self
+    public function setLabel(string $Label): self
     {
-        $this->label = $label;
+        $this->Label = $Label;
 
         return $this;
     }
@@ -83,7 +81,6 @@ class Type
 
         return $this;
     }
-
     public function __toString()
     {
         return $this->getLabel();

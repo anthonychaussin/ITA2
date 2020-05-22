@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DisLikeP{% endblock %}
+
+{% block body %}
+    <h1>DisLikeP</h1>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ dis_like_p.id }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('dis_like_p_index') }}">back to list</a>
+
+    <a href="{{ path('dis_like_p_edit', {'id': dis_like_p.id}) }}">edit</a>
+
+    {{ include('dis_like_p/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New DisLikeP{% endblock %}
+
+{% block body %}
+    <h1>Create new DisLikeP</h1>
+
+    {{ include('dis_like_p/_form.html.twig') }}
+
+    <a href="{{ path('dis_like_p_index') }}">back to list</a>
+{% endblock %}

@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "59792f2db5af6be4b62ae4e8b033b3bf",
+  "content-hash": "088986223f9faaad20a3520e8f81c748",
   "packages": [
     {
       "name": "api-platform/api-pack",
@@ -259,26 +259,26 @@
       },
       "require-dev": {
         "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
+        "phpunit/phpunit": "^7.5"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.9.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
                 },
                 {
@@ -1362,22 +1362,22 @@
                 "MIT"
             ],
             "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
+              {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+              },
+              {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+              },
+              {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+              },
+              {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+              },
               {
                 "name": "Johannes Schmitt",
                 "email": "schmittjoh@gmail.com"
@@ -1501,24 +1501,24 @@
       },
       "require-dev": {
         "dominicsayers/isemail": "^3.0.7",
-                "phpunit/phpunit": "^4.8.36|^7.5.15",
-                "satooshi/php-coveralls": "^1.0.1"
-            },
-            "suggest": {
-                "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Egulias\\EmailValidator\\": "EmailValidator"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+        "phpunit/phpunit": "^4.8.36|^7.5.15",
+        "satooshi/php-coveralls": "^1.0.1"
+      },
+      "suggest": {
+        "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "2.1.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Egulias\\EmailValidator\\": "EmailValidator"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "MIT"
       ],
@@ -1736,6 +1736,56 @@
       "time": "2020-04-15T09:21:31+00:00"
     },
     {
+      "name": "fzaninotto/faker",
+      "version": "v1.9.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/fzaninotto/Faker.git",
+        "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+        "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^5.3.3 || ^7.0"
+      },
+      "require-dev": {
+        "ext-intl": "*",
+        "phpunit/phpunit": "^4.8.35 || ^5.7",
+        "squizlabs/php_codesniffer": "^2.9.2"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.9-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Faker\\": "src/Faker/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "François Zaninotto"
+        }
+      ],
+      "description": "Faker is a PHP library that generates fake data for you.",
+      "keywords": [
+        "data",
+        "faker",
+        "fixtures"
+      ],
+      "time": "2019-12-12T13:22:17+00:00"
+    },
+    {
       "name": "gedmo/doctrine-extensions",
       "version": "v2.4.41",
       "source": {
@@ -1896,26 +1946,26 @@
         "phpunit/phpunit": "3.7.*"
       },
       "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "lib"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jeremy Dorn",
-                    "email": "jeremy@jeremydorn.com",
-                    "homepage": "http://jeremydorn.com/"
-                }
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.3.x-dev"
+        }
+      },
+      "autoload": {
+        "classmap": [
+          "lib"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Jeremy Dorn",
+          "email": "jeremy@jeremydorn.com",
+          "homepage": "http://jeremydorn.com/"
+        }
             ],
             "description": "a PHP SQL highlighting library",
             "homepage": "https://github.com/jdorn/sql-formatter/",
@@ -2065,24 +2115,24 @@
                 "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
                 "squizlabs/php_codesniffer": "^3.5"
             },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev",
-                    "dev-develop": "1.1.x-dev"
-                },
-                "laminas": {
-                    "module": "Laminas\\ZendFrameworkBridge"
-                }
+          "type": "library",
+          "extra": {
+            "branch-alias": {
+              "dev-master": "1.0.x-dev",
+              "dev-develop": "1.1.x-dev"
             },
-            "autoload": {
-                "files": [
-                  "src/autoload.php"
-                ],
-              "psr-4": {
-                "Laminas\\ZendFrameworkBridge\\": "src//"
-              }
-            },
+            "laminas": {
+              "module": "Laminas\\ZendFrameworkBridge"
+            }
+          },
+          "autoload": {
+            "files": [
+              "src/autoload.php"
+            ],
+            "psr-4": {
+              "Laminas\\ZendFrameworkBridge\\": "src//"
+            }
+          },
           "notification-url": "https://packagist.org/downloads/",
           "license": [
             "BSD-3-Clause"
@@ -2218,47 +2268,47 @@
       "provide": {
         "psr/log-implementation": "1.0.0"
       },
-            "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
-                "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^6.0",
-                "graylog2/gelf-php": "^1.4.2",
-                "jakub-onderka/php-parallel-lint": "^0.9",
-                "php-amqplib/php-amqplib": "~2.4",
-                "php-console/php-console": "^3.1.3",
-                "phpspec/prophecy": "^1.6.1",
-                "phpunit/phpunit": "^8.3",
-                "predis/predis": "^1.1",
-                "rollbar/rollbar": "^1.3",
-                "ruflin/elastica": ">=0.90 <3.0",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
-            },
-            "suggest": {
-                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+      "require-dev": {
+        "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+        "doctrine/couchdb": "~1.0@dev",
+        "elasticsearch/elasticsearch": "^6.0",
+        "graylog2/gelf-php": "^1.4.2",
+        "jakub-onderka/php-parallel-lint": "^0.9",
+        "php-amqplib/php-amqplib": "~2.4",
+        "php-console/php-console": "^3.1.3",
+        "phpspec/prophecy": "^1.6.1",
+        "phpunit/phpunit": "^8.3",
+        "predis/predis": "^1.1",
+        "rollbar/rollbar": "^1.3",
+        "ruflin/elastica": ">=0.90 <3.0",
+        "swiftmailer/swiftmailer": "^5.3|^6.0"
+      },
+      "suggest": {
+        "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+        "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+        "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+        "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mbstring": "Allow to work properly with unicode symbols",
                 "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
                 "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
-                "php-console/php-console": "Allow sending log messages to Google Chrome",
-                "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Monolog\\": "src/Monolog"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+        "php-console/php-console": "Allow sending log messages to Google Chrome",
+        "rollbar/rollbar": "Allow sending log messages to Rollbar",
+        "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "2.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Monolog\\": "src/Monolog"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "MIT"
       ],
@@ -2356,26 +2406,26 @@
       "require-dev": {
         "composer/composer": "^1.9.3 || ^2.0@dev",
         "doctrine/coding-standard": "^7.0.2",
-                "ext-zip": "^1.15.0",
-                "infection/infection": "^0.15.3",
-                "phpunit/phpunit": "^9.0.1",
-                "vimeo/psalm": "^3.9.3"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "PackageVersions\\Installer",
-                "branch-alias": {
-                    "dev-master": "1.99.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PackageVersions\\": "src/PackageVersions"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
+        "ext-zip": "^1.15.0",
+        "infection/infection": "^0.15.3",
+        "phpunit/phpunit": "^9.0.1",
+        "vimeo/psalm": "^3.9.3"
+      },
+      "type": "composer-plugin",
+      "extra": {
+        "class": "PackageVersions\\Installer",
+        "branch-alias": {
+          "dev-master": "1.99.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "PackageVersions\\": "src/PackageVersions"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
             ],
             "authors": [
                 {
@@ -2424,25 +2474,25 @@
             },
             "suggest": {
                 "laminas/laminas-json": "To have the JsonRpc adapter (Remote Object feature)",
-                "laminas/laminas-soap": "To have the Soap adapter (Remote Object feature)",
-                "laminas/laminas-xmlrpc": "To have the XmlRpc adapter (Remote Object feature)",
-                "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects"
+              "laminas/laminas-soap": "To have the Soap adapter (Remote Object feature)",
+              "laminas/laminas-xmlrpc": "To have the XmlRpc adapter (Remote Object feature)",
+              "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects"
             },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "ProxyManager\\": "src/ProxyManager"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
+          "type": "library",
+          "extra": {
+            "branch-alias": {
+              "dev-master": "3.0.x-dev"
+            }
+          },
+          "autoload": {
+            "psr-4": {
+              "ProxyManager\\": "src/ProxyManager"
+            }
+          },
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
           "authors": [
             {
               "name": "Marco Pivetta",
@@ -2551,26 +2601,26 @@
       "extra": {
         "branch-alias": {
           "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "phpDocumentor\\Reflection\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jaap van Otterdijk",
-                    "email": "opensource@ijaap.nl"
-                }
-            ],
-            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
-            "homepage": "http://www.phpdoc.org",
-            "keywords": [
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "phpDocumentor\\Reflection\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Jaap van Otterdijk",
+          "email": "opensource@ijaap.nl"
+        }
+      ],
+      "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
+      "homepage": "http://www.phpdoc.org",
+      "keywords": [
                 "FQSEN",
                 "phpDocumentor",
                 "phpdoc",
@@ -2953,24 +3003,24 @@
                 "symfony/phpunit-bridge": "^4.3.5|^5.0",
                 "symfony/psr-http-message-bridge": "^1.1",
                 "symfony/security-bundle": "^4.4|^5.0",
-                "symfony/twig-bundle": "^4.4|^5.0",
-                "symfony/yaml": "^4.4|^5.0",
-                "twig/twig": "^1.34|^2.4|^3.0"
+              "symfony/twig-bundle": "^4.4|^5.0",
+              "symfony/yaml": "^4.4|^5.0",
+              "twig/twig": "^1.34|^2.4|^3.0"
             },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.5.x-dev"
-                }
+          "type": "symfony-bundle",
+          "extra": {
+            "branch-alias": {
+              "dev-master": "5.5.x-dev"
+            }
+          },
+          "autoload": {
+            "psr-4": {
+              "Sensio\\Bundle\\FrameworkExtraBundle\\": "src/"
             },
-            "autoload": {
-                "psr-4": {
-                    "Sensio\\Bundle\\FrameworkExtraBundle\\": "src/"
-                },
-                "exclude-from-classmap": [
-                    "/tests/"
-                ]
-            },
+            "exclude-from-classmap": [
+              "/tests/"
+            ]
+          },
           "notification-url": "https://packagist.org/downloads/",
           "license": [
             "MIT"
@@ -3075,26 +3125,26 @@
         "symfony/http-foundation": "^4.4|^5.0",
         "symfony/http-kernel": "^4.4|^5.0"
       },
-            "suggest": {
-                "symfony/http-foundation": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Asset\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
+      "suggest": {
+        "symfony/http-foundation": ""
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "5.0-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Asset\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
             ],
             "authors": [
                 {
@@ -6239,18 +6289,18 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony String component",
-            "homepage": "https://symfony.com",
+          "authors": [
+            {
+              "name": "Nicolas Grekas",
+              "email": "p@tchwork.com"
+            },
+            {
+              "name": "Symfony Community",
+              "homepage": "https://symfony.com/contributors"
+            }
+          ],
+          "description": "Symfony String component",
+          "homepage": "https://symfony.com",
           "keywords": [
             "grapheme",
             "i18n",
@@ -6338,26 +6388,26 @@
       },
       "conflict": {
         "symfony/config": "<4.4",
-                "symfony/dependency-injection": "<5.0",
-                "symfony/http-kernel": "<5.0",
-                "symfony/twig-bundle": "<5.0",
-                "symfony/yaml": "<4.4"
-            },
-            "provide": {
-                "symfony/translation-implementation": "2.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "^4.4|^5.0",
-                "symfony/console": "^4.4|^5.0",
-                "symfony/dependency-injection": "^5.0",
-                "symfony/finder": "^4.4|^5.0",
-                "symfony/http-kernel": "^5.0",
-                "symfony/intl": "^4.4|^5.0",
-                "symfony/service-contracts": "^1.1.2|^2",
-                "symfony/yaml": "^4.4|^5.0"
-            },
-            "suggest": {
+        "symfony/dependency-injection": "<5.0",
+        "symfony/http-kernel": "<5.0",
+        "symfony/twig-bundle": "<5.0",
+        "symfony/yaml": "<4.4"
+      },
+      "provide": {
+        "symfony/translation-implementation": "2.0"
+      },
+      "require-dev": {
+        "psr/log": "~1.0",
+        "symfony/config": "^4.4|^5.0",
+        "symfony/console": "^4.4|^5.0",
+        "symfony/dependency-injection": "^5.0",
+        "symfony/finder": "^4.4|^5.0",
+        "symfony/http-kernel": "^5.0",
+        "symfony/intl": "^4.4|^5.0",
+        "symfony/service-contracts": "^1.1.2|^2",
+        "symfony/yaml": "^4.4|^5.0"
+      },
+      "suggest": {
                 "psr/log-implementation": "To use logging capability in translator",
                 "symfony/config": "",
                 "symfony/yaml": ""
@@ -7032,26 +7082,26 @@
       "conflict": {
         "symfony/console": "<4.4"
       },
-            "require-dev": {
-                "symfony/console": "^4.4|^5.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
+      "require-dev": {
+        "symfony/console": "^4.4|^5.0"
+      },
+      "suggest": {
+        "symfony/console": "For validating YAML files using the lint command"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "5.0-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Yaml\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -7250,25 +7300,25 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/webmozart/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
-                "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
-                "shasum": ""
+              "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+              "shasum": ""
             },
-            "require": {
-                "php": "^5.3.3 || ^7.0",
-                "symfony/polyfill-ctype": "^1.8"
-            },
-            "conflict": {
-                "vimeo/psalm": "<3.9.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Webmozart\\Assert\\": "src/"
-                }
-            },
+          "require": {
+            "php": "^5.3.3 || ^7.0",
+            "symfony/polyfill-ctype": "^1.8"
+          },
+          "conflict": {
+            "vimeo/psalm": "<3.9.1"
+          },
+          "require-dev": {
+            "phpunit/phpunit": "^4.8.36 || ^7.5.13"
+          },
+          "type": "library",
+          "autoload": {
+            "psr-4": {
+              "Webmozart\\Assert\\": "src/"
+            }
+          },
           "notification-url": "https://packagist.org/downloads/",
           "license": [
             "MIT"
@@ -7586,26 +7636,26 @@
       "require-dev": {
         "ircmaxell/php-yacc": "0.0.5",
         "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
-            },
-            "bin": [
-                "bin/php-parse"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PhpParser\\": "lib/PhpParser"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
+      },
+      "bin": [
+        "bin/php-parse"
+      ],
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.3-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "PhpParser\\": "lib/PhpParser"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
                 {
                     "name": "Nikita Popov"
                 }

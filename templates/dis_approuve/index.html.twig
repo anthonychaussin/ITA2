@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DisApprouve index{% endblock %}
+
+{% block body %}
+    <h1>DisApprouve index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for dis_approuve in dis_approuves %}
+            <tr>
+                <td>{{ dis_approuve.id }}</td>
+                <td>
+                    <a href="{{ path('dis_approuve_show', {'id': dis_approuve.id}) }}">show</a>
+                    <a href="{{ path('dis_approuve_edit', {'id': dis_approuve.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('dis_approuve_new') }}">Create new</a>
+{% endblock %}
