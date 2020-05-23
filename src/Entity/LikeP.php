@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\LikePRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ApiResource()
  * @ORM\Entity(repositoryClass=LikePRepository::class)
  */
 class LikeP

@@ -5,7 +5,9 @@ namespace App\Controller;
 use App\Entity\Post;
 use App\Form\Post1Type;
 use App\Repository\PostRepository;
+use DateTime;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,15 +18,40 @@ use Symfony\Component\Routing\Annotation\Route;
 class PostController extends AbstractController
 {
     /**
-     * @Route("/", name="post_index", methods={"GET"})
+     * @Route("/index/{page}", name="post_index", methods={"GET"})
      * @param PostRepository $postRepository
+     * @param int $page
      * @return Response
      */
-    public function index(PostRepository $postRepository): Response
+    public function index(PostRepository $postRepository, int $page = 0): Response
     {
         return $this->render('post/index.html.twig', [
-            'posts' => $postRepository->findAll(),
+            'posts' => $postRepository->finMostLoved(20, $page),
         ]);
+    }
+
+    /**
+     * @Route("/archive/{datetime}", name="post_archive", methods={"GET","POST"})
+     * @param PostRepository $postRepository
+     * @param DateTime|null $dateTime
+     * @return Response
+     */
+    public function archive(PostRepository $postRepository, DateTime $dateTime = null): Response
+    {
+        return $this->render('post/archive.html.twig', [
+            'posts' => $postRepository->findFromMonth($dateTime),
+        ]);
+    }
+
+    /**
+     * @Route("/api/archive/{dateTime}", name="api_post_archive", methods={"GET"})
+     * @param PostRepository $postRepository
+     * @param string $dateTime
+     * @return JsonResponse
+     */
+    public function apiArchive(PostRepository $postRepository, string $dateTime): JsonResponse
+    {
+        return $this->json(($postRepository->findFromMonth(new DateTime($dateTime))));
     }
 
     /**

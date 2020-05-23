@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\DisLikePRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ApiResource()
  * @ORM\Entity(repositoryClass=DisLikePRepository::class)
  */
 class DisLikeP

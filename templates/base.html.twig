@@ -37,17 +37,18 @@
     <div class="w-100" id="navbarNav">
         <ul class="navbar-nav d-inline-flex w-100">
             <li class="nav-item active ml-auto">
-                <a class="nav-link text-uppercase font-weight-bold" href="#">Billets<span
+                <a class="nav-link text-uppercase font-weight-bold" href="{{ path('home', ['page', 0]) }}">Billets<span
                             class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-uppercase font-weight-bold" href="#">Coups de cœur</a>
+                <a class="nav-link text-uppercase font-weight-bold" href="{{ path('post_index', ['page', 0]) }}">Coups
+                    de cœur</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-uppercase font-weight-bold" href="#">Contribuer</a>
+                <a class="nav-link text-uppercase font-weight-bold" href="{{ path('post_new') }}">Contribuer</a>
             </li>
             <li class="nav-item mr-auto">
-                <a class="nav-link text-uppercase font-weight-bold" href="#">Archives</a>
+                <a class="nav-link text-uppercase font-weight-bold" href="{{ path('post_archive') }}">Archives</a>
             </li>
         </ul>
     </div>

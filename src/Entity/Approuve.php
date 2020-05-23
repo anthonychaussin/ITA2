@@ -2,10 +2,12 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ApprouveRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ApiResource()
  * @ORM\Entity(repositoryClass=ApprouveRepository::class)
  */
 class Approuve
@@ -57,6 +59,7 @@ class Approuve
 
         return $this;
     }
+
     public function __toString()
     {
         return $this->getUser() . "";

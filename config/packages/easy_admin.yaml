@@ -1,6 +1,72 @@
 easy_admin:
+    site_name: 'ImposeTonAnonymat'
     entities:
-        #        # List the entity class name you want to manage
-        - App\Entity\Post
-        - App\Entity\Type
-        - App\Entity\User
+      # List the entity class name you want to manage
+      Post:
+        class: App\Entity\Post
+        label: 'Post'
+        list:
+          fields: ['title', 'ressource', 'type']
+          title: "Newest Post"
+          sort: ['id', 'DESC']
+        new:
+          fields:
+            - { property: 'title', type: 'text', type_option: { required: true} }
+            - { property: 'user', label: 'Owner', type: 'easyadmin_autocomplete', type_option: { class: 'App\Entity\User' } }
+            - { property: 'ressource', type: 'text', type_option: { required: true} }
+            - { property: 'type', label: 'Type', type: 'easyadmin_autocomplete', type_option: { class: 'App\Entity\Type' } }
+      Type:
+        class: App\Entity\Type
+        label: 'Type'
+        list:
+          fields: ['label']
+          title: "All types"
+          sort: ['id', 'DESC']
+        new:
+          fields:
+            - { property: 'label', type: 'text', type_option: { required: true} }
+      Commentary:
+        class: App\Entity\Commentary
+        label: 'Commentary'
+        list:
+          fields: ['text']
+          title: "All commentary"
+          sort: ['id', 'DESC']
+        new:
+          fields:
+            - { property: 'label', type: 'text', type_option: { required: true} }
+            - { property: 'user', label: 'Owner', type: 'easyadmin_autocomplete', type_option: { class: 'App\Entity\User' } }
+            - { property: 'post', label: 'Target', type: 'easyadmin_autocomplete', type_option: { class: 'App\Entity\Post' } }
+      User:
+        class: App\Entity\User
+        label: 'User'
+        list:
+          fields: ['username', 'email']
+          title: "Latest users registered on web site"
+          sort: ['id', 'DESC']
+        new:
+          fields:
+            - { property: 'username', type: 'text' }
+            - { property: 'email', type: 'email' }
+
+    user:
+      display_name: true
+      display_avatar: true
+      # this method/property must return the string representation of the user
+      # (Symfony will look for getFullName(), isFullName(), ..., and 'fullName' property)
+      name_property_path: 'email'
+
+      # this method/property must return the absolute URL of the user avatar image
+      # (Symfony will look for getGravatar(), isGravatar(), ..., and 'gravatar' property)
+      avatar_property_path: 'gravatar'
+
+    design:
+      brand_color: '#1ABC9C'
+      assets:
+        favicon: '/public/favicon.ico'
+        # all kinds of assets are supported and linked accordingly
+      menu:
+        - { entity: 'User', icon: 'user' }
+        - { entity: 'Type', icon: 'clipboard-list' }
+        - { entity: 'Post', icon: 'pager' }
+        - { entity: 'Commentary', icon: 'flag' }

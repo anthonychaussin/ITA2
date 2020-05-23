@@ -3,7 +3,13 @@
 {% block title %}Post index{% endblock %}
 
 {% block body %}
-    {% for post in posts %}
-        {{ include('post/_post_card.html.twig') }}
-    {% endfor %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                {% for post in posts %}
+                    {{ include('post/_post_card.html.twig') }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
