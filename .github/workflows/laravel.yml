@@ -25,6 +25,6 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-      run: vendor/bin/phpunit
+      run: bin/phpunit
     - name: PHPUnit for Symfony
       uses: chindit/actions-phpunit-symfony@1.0.0
