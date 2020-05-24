@@ -13,7 +13,7 @@ class Post1Type extends AbstractType
     {
         $builder
             ->add('Title')
-            ->add('Resource')
+            ->add('Ressource')
             ->add('Date')
             ->add('Type')
             ->add('User');

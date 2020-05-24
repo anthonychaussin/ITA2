@@ -6,6 +6,7 @@ use App\Entity\Post;
 use App\Form\Post1Type;
 use App\Repository\PostRepository;
 use DateTime;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -55,6 +56,7 @@ class PostController extends AbstractController
     }
 
     /**
+     * @IsGranted("IS_AUTHENTICATED_FULLY")
      * @Route("/new", name="post_new", methods={"GET","POST"})
      * @param Request $request
      * @return Response
@@ -92,6 +94,7 @@ class PostController extends AbstractController
     }
 
     /**
+     * @IsGranted("IS_AUTHENTICATED_FULLY")
      * @Route("/{id}/edit", name="post_edit", methods={"GET","POST"})
      * @param Request $request
      * @param Post $post
@@ -115,6 +118,7 @@ class PostController extends AbstractController
     }
 
     /**
+     * @IsGranted("ROLE_ADMIN")
      * @Route("/{id}", name="post_delete", methods={"DELETE"})
      * @param Request $request
      * @param Post $post
